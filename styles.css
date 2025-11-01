@@ -285,11 +285,10 @@ body {
 
 .carousel-btn {
     position: absolute;
-    bottom: 20px; /* Posisi dari bawah */
-    top: auto; /* Hapus positioning dari atas */
-    transform: none; /* Hapus translateY */
-    background: rgba(0, 0, 0, 0.05);
-    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -298,15 +297,16 @@ body {
     justify-content: center;
     cursor: pointer;
     z-index: 10;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-btn.prev {
-    right: 60px; /* Jarak dari kanan untuk tombol prev */
+    left: 0;
 }
 
 .carousel-btn.next {
-    right: 10px; /* Jarak dari kanan untuk tombol next */
+    right: 0;
 }
 
 /* Hover effect seperti Apple */
